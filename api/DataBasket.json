@@ -3,24 +3,31 @@
     "Member": [
       {
         "name": "Fahwan Faisal",
-        "score": "Absolute Score",
+        "score": "Unlimited",
         "position": "Head Coach",
         "role": "| PG | PF | SG | SF | C | ",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/Fh2P34z/Fahwan-F.jpg"
       },
       {
         "name": "N Pasha Malik A",
-        "score": "unlimited",
+        "score": "Unlimited",
         "position": "Assistant Coach",
         "role": "| PG | PF | SG | SF | C |",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/jTfwtDk/npma.jpg"
       },
       {
         "name": "Ikmal Faiz A",
-        "score": "9999999999999",
+        "score": "Unlimited",
         "position": "Chief Extracurricular",
         "role": "| PG | PF | SG | SF | C |",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/Wyyz01Y/Ikmal-F.jpg"
+      },
+      {
+        "name": "Daffia Nurseto",
+        "score": "Unlimted",
+        "position": "Secretary",
+        "role": "| PG | PF | SG | SF | C |",
+        "profile_image": "https://i.ibb.co.com/2F6phzJ/Daffia-N.jpg"
       },
       {
         "name": "Agni Tan Jyaiaan",
@@ -34,7 +41,7 @@
         "score": "-",
         "position": "Member",
         "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/BL69Q3k/Adi-A.jpg"
       },
       {
         "name": "Alexander R",
@@ -48,7 +55,7 @@
         "score": "-",
         "position": "Member",
         "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/LYM57Zz/Andhika-Y.jpg"
       },
       {
         "name": "Arga Fahreza",
@@ -62,21 +69,14 @@
         "score": "-",
         "position": "Member",
         "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
-      },
-      {
-        "name": "Daffia Nurseto",
-        "score": "-",
-        "position": "Member",
-        "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/sj77ktG/Delon-A.jpg"
       },
       {
         "name": "Eki Yokiana",
         "score": "-",
         "position": "Member",
         "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/YpSX96J/Eki-Y.jpg"
       },
       {
         "name": "Fajar Setiawan",
@@ -118,7 +118,7 @@
         "score": "-",
         "position": "Member",
         "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/2KR6YZQ/Kafka-K.jpg"
       },
       {
         "name": "Kheyza Sopi",
@@ -146,14 +146,14 @@
         "score": "-",
         "position": "Member",
         "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/CtvzKJK/M-Irfan-L.jpg"
       },
       {
         "name": "M. Nazriel Jaelani",
         "score": "-",
         "position": "Member",
         "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/LdrXPmZ/M-Nazriel-J.jpg"
       },
       {
         "name": "M. Rijal Algifari",
@@ -174,7 +174,7 @@
         "score": "-",
         "position": "Member",
         "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/bL698gv/Nazriel-M.jpg"
       },
       {
         "name": "Pani Lestari",
@@ -188,7 +188,7 @@
         "score": "-",
         "position": "Member",
         "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/82wCvKd/Radillah-F.jpg"
       },
       {
         "name": "Rehan",
@@ -216,21 +216,21 @@
         "score": "-",
         "position": "Member",
         "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/mT4BySV/Rizki-R.jpg"
       },
       {
         "name": "Satria Bayu",
         "score": "-",
         "position": "Member",
         "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/qyRp9zs/Satria-B.jpg"
       },
       {
         "name": "Shandika Fitriadi",
         "score": "-",
         "position": "Member",
         "role": "-",
-        "profile_image": "https://via.placeholder.com/150"
+        "profile_image": "https://i.ibb.co.com/9NZFpQZ/Shandika-F.jpg"
       },
       {
         "name": "Singit Suseno",

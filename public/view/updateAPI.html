@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit JSON</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100 p-4 md:p-6">
-    <h1 class="text-center text-2xl font-semibold text-gray-700 mb-6">Edit Anggota Tim Basket</h1>
+    <title>Edit | Glorias</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 p-4 md:p-6">
+    <h1 class="text-center text-2xl font-semibold text-gray-700 mb-6">
+      Edit Anggota Tim Basket
+    </h1>
     <div class="overflow-x-auto">
-        <table class="min-w-full bg-white rounded-lg shadow-lg">
-            <thead>
-                <tr class="bg-blue-500 text-white">
-                    <th class="py-3 px-2 md:px-4 text-left">Nama</th>
-                    <th class="py-3 px-2 md:px-4 text-left">Skor</th>
-                    <th class="py-3 px-2 md:px-4 text-left">Posisi</th>
-                    <th class="py-3 px-2 md:px-4 text-left">Peran</th>
-                    <th class="py-3 px-2 md:px-4 text-left">Profil</th>
-                    <th class="py-3 px-2 md:px-4 text-left">URL Profil</th>
-                    <th class="py-3 px-2 md:px-4 text-left">Aksi</th>
-                </tr>
-            </thead>
-            <tbody id="memberTableBody">
-                <!-- Data akan dimuat di sini -->
-            </tbody>
-        </table>
+      <table class="min-w-full bg-white rounded-lg shadow-lg">
+        <thead>
+          <tr class="bg-blue-500 text-white">
+            <th class="py-3 px-2 md:px-4 text-left">Nama</th>
+            <th class="py-3 px-2 md:px-4 text-left">Skor</th>
+            <th class="py-3 px-2 md:px-4 text-left">Posisi</th>
+            <th class="py-3 px-2 md:px-4 text-left">Peran</th>
+            <th class="py-3 px-2 md:px-4 text-left">Profil</th>
+            <th class="py-3 px-2 md:px-4 text-left">URL Profil</th>
+            <th class="py-3 px-2 md:px-4 text-left">Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="memberTableBody">
+          <!-- Data akan dimuat di sini -->
+        </tbody>
+      </table>
     </div>
 
     <script>
-        let data = {};
+      let data = {};
 
-        async function loadData() {
-            try {
-                const response = await fetch("/api/DataBasket.json");
-                data = await response.json();
-                loadMembers();
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
+      async function loadData() {
+        try {
+          const response = await fetch("/api/DataBasket.json");
+          data = await response.json();
+          loadMembers();
+        } catch (error) {
+          console.error("Error fetching data:", error);
         }
+      }
 
-        function loadMembers() {
-            const tbody = document.getElementById("memberTableBody");
-            tbody.innerHTML = "";
-            data.basketballp2b.Member.forEach((member, index) => {
-                tbody.innerHTML += `
+      function loadMembers() {
+        const tbody = document.getElementById("memberTableBody");
+        tbody.innerHTML = "";
+        data.basketballp2b.Member.forEach((member, index) => {
+          tbody.innerHTML += `
                     <tr class="border-b hover:bg-gray-100">
                         <td class="py-2 px-2 md:px-4"><input type="text" value="${member.name}" data-index="${index}" data-field="name" class="border rounded w-full p-1"></td>
                         <td class="py-2 px-2 md:px-4"><input type="text" value="${member.score}" data-index="${index}" data-field="score" class="border rounded w-full p-1"></td>
@@ -58,58 +63,62 @@
                         </td>
                     </tr>
                 `;
-            });
-        }
-
-        function confirmDelete(index) {
-            const confirmDelete = confirm("Apakah Anda yakin ingin menghapus anggota ini?");
-            if (confirmDelete) {
-                deleteMember(index);
-            }
-        }
-
-        function deleteMember(index) {
-            data.basketballp2b.Member.splice(index, 1);
-            saveData();
-            loadMembers();
-        }
-
-        document.addEventListener("input", function (event) {
-            if (event.target.matches("input[type='text']")) {
-                const index = event.target.getAttribute("data-index");
-                const field = event.target.getAttribute("data-field");
-                data.basketballp2b.Member[index][field] = event.target.value;
-
-                if (field === "profile_image") {
-                    const imgElement = document.querySelector(`#memberTableBody tr:nth-child(${index + 1}) img`);
-                    if (imgElement) {
-                        imgElement.src = event.target.value;
-                    }
-                }
-            }
         });
+      }
 
-        async function saveData() {
-            try {
-                const response = await fetch("/api/DataBasket.json", {
-                    method: "PUT",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(data),
-                });
-
-                if (response.ok) {
-                    alert("Data berhasil disimpan!");
-                } else {
-                    alert("Gagal menyimpan data.");
-                }
-            } catch (error) {
-                console.error("Error saving data:", error);
-            }
+      function confirmDelete(index) {
+        const confirmDelete = confirm(
+          "Apakah Anda yakin ingin menghapus anggota ini?"
+        );
+        if (confirmDelete) {
+          deleteMember(index);
         }
+      }
 
-        loadData();
+      function deleteMember(index) {
+        data.basketballp2b.Member.splice(index, 1);
+        saveData();
+        loadMembers();
+      }
+
+      document.addEventListener("input", function (event) {
+        if (event.target.matches("input[type='text']")) {
+          const index = event.target.getAttribute("data-index");
+          const field = event.target.getAttribute("data-field");
+          data.basketballp2b.Member[index][field] = event.target.value;
+
+          if (field === "profile_image") {
+            const imgElement = document.querySelector(
+              `#memberTableBody tr:nth-child(${index + 1}) img`
+            );
+            if (imgElement) {
+              imgElement.src = event.target.value;
+            }
+          }
+        }
+      });
+      async function saveData() {
+        try {
+          const response = await fetch("/api/DataBasket.json", {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          if (response.ok) {
+            alert("Data berhasil disimpan!");
+            location.reload(); // Tambahkan ini untuk me-refresh halaman
+          } else {
+            alert("Gagal menyimpan data.");
+          }
+        } catch (error) {
+          console.error("Error saving data:", error);
+        }
+      }
+
+      loadData();
     </script>
-</body>
+  </body>
 </html>
