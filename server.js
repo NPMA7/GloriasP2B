@@ -21,8 +21,8 @@ app.get('/programs', (req, res) => {
 app.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'view/contact.html'));
 });
-app.get('/test', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'view/test.html'));
+app.get('/admin', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'view/updateAPI.html'));
 });
 
 app.get('/api/DataBasket.json', (req, res) => {
