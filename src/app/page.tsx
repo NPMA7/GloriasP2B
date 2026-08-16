@@ -302,12 +302,12 @@ export default function Home() {
       {/* 🏀 HERO SECTION */}
       <section
         id="beranda"
-        className="relative flex min-h-[92vh] items-center justify-center overflow-hidden px-4 py-20 sm:px-6 lg:px-8"
+        className="relative flex min-h-[100vh] items-center justify-center overflow-hidden px-4 py-20 sm:px-6 lg:px-8"
       >
         {/* Background Image with Dynamic Overlays */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/img/Hero.jpg"
+            src="/img/3.jpg"
             alt="Glorias Basketball Team SMK Pasundan 2 Banjaran"
             fill
             priority
@@ -878,7 +878,7 @@ export default function Home() {
 
               <div className="relative h-64 w-full overflow-hidden rounded-2xl border border-white/10">
                 <Image
-                  src="/img/DSCF0436.jpg"
+                  src="/img/2.jpg"
                   alt="SMK Pasundan 2 Banjaran Basketball Team"
                   fill
                   className="object-cover brightness-90"
