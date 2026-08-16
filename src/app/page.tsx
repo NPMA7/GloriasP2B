@@ -153,7 +153,7 @@ export default function Home() {
           {/* Desktop Nav Links */}
           <nav className="hidden items-center gap-8 md:flex">
             <a
-              href="#beranda"
+              href="#"
               className="text-sm font-medium text-slate-300 transition hover:text-[#ff5500]"
             >
               Beranda
