@@ -47,71 +47,48 @@ export default function Home() {
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
 
   const galleryItems = [
+
     {
-      src: "/img/DSCF0436.jpg",
-      title: "Glorias Championship Squad",
-      desc: "Kekompakan tim basket putra & putri SMK Pasundan 2 Banjaran.",
-      category: "team",
-    },
-    {
-      src: "/img/DSCF0493.jpg",
+      src: "/img/11.jpg",
       title: "Tactical Execution & Defense",
-      desc: "Evaluasi strategi dan pola pertahanan intensif di lapangan.",
+      desc: "Eksekusi strategi dan pola pertahanan intensif di lapangan.",
       category: "match",
     },
     {
-      src: "/img/DSCF0492.jpg",
-      title: "Strategic Offense Clinic",
-      desc: "Latihan transisi cepat dan pergerakan bola rotasi penyerangan.",
+      src: "/img/8.jpg",
+      title: "Strategy Education",
+      desc: "Latihan strategi penyerangan dan rotasi pertahanan.",
       category: "training",
     },
     {
-      src: "/img/DSCF0576.jpg",
+      src: "/img/10.jpg",
       title: "Ball Handling Mastery",
       desc: "Penguasaan dribble presisi dan kontrol bola kecepatan tinggi.",
       category: "training",
     },
     {
-      src: "/img/DSCF0451.jpg",
+      src: "/img/5.jpg",
       title: "Pre-Game Mindset",
       desc: "Fokus dan kesiapan mental atlet sebelum memasuki arena laga.",
       category: "team",
     },
     {
-      src: "/img/DSCF0447.jpg",
-      title: "Youth Athlete Development",
-      desc: "Pembinaan fisik dan disiplin bagi anggota generasi baru.",
-      category: "training",
-    },
-    {
-      src: "/img/DSCF0438.jpg",
+      src: "/img/13.jpg",
       title: "Brotherhood Huddle",
       desc: "Satu tujuan, satu semangat membela almamater Pasundan 2.",
       category: "team",
     },
     {
-      src: "/img/DSCF0503.jpg",
-      title: "Fast Break & Layup Drills",
-      desc: "Simulasi serangan balik kilat dan penyelesaian akhir tajam.",
-      category: "match",
-    },
-    {
-      src: "/img/DSCF0511.jpg",
+      src: "/img/12.jpg",
       title: "Shooting Precision",
       desc: "Latihan tembakan perimeter dan free-throw akurasi tinggi.",
       category: "training",
     },
     {
-      src: "/img/DSCF0442.jpg",
+      src: "/img/14.jpg",
       title: "Rebound & Court Dominance",
       desc: "Duel udara dan pertahanan paint area yang kokoh.",
       category: "match",
-    },
-    {
-      src: "/img/DSCF0572.jpg",
-      title: "Transition Play",
-      desc: "Kelincahan kaki dan koordinasi umpan cepat antar-posisi.",
-      category: "training",
     },
     {
       src: "/img/DSCF0470.jpg",
@@ -302,7 +279,7 @@ export default function Home() {
       {/* 🏀 HERO SECTION */}
       <section
         id="beranda"
-        className="relative flex min-h-[100vh] items-center justify-center overflow-hidden px-4 py-20 sm:px-6 lg:px-8"
+        className="relative flex min-h-[92vh] items-end justify-start overflow-hidden px-4 pb-14 pt-28 sm:px-8 sm:pb-20 lg:px-16 lg:pb-24"
       >
         {/* Background Image with Dynamic Overlays */}
         <div className="absolute inset-0 z-0">
@@ -311,36 +288,30 @@ export default function Home() {
             alt="Glorias Basketball Team SMK Pasundan 2 Banjaran"
             fill
             priority
-            className="object-cover object-center opacity-80 scale-105 transform transition duration-1000"
+            className="object-cover object-center  scale-105 transform transition duration-1000"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#07090E] via-[#07090E]/80 to-[#07090E]/60" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#07090E]/50 to-[#07090E]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#07090E] via-[#07090E]/70 to-[#07090E]/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#07090E]/90 via-[#07090E]/60 to-[#07090E]/10" />
           {/* Subtle Orange Glow Ambient */}
-          <div className="absolute -top-32 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-[#ff5500]/15 blur-[120px]" />
+          <div className="absolute -top-32 left-10 h-96 w-96 rounded-full bg-[#ff5500]/15 blur-[120px]" />
         </div>
 
-        <div className="relative z-10 mx-auto max-w-5xl text-center">
+        <div className="relative z-10 w-full max-w-4xl text-left">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#ff5500]/40 bg-[#ff5500]/10 px-4 py-1.5 backdrop-blur-md">
-            <Sparkles className="h-3.5 w-3.5 text-[#ff5500]" />
-            <span className="text-xs font-bold uppercase tracking-wider text-[#ff7722]">
-              Official Basketball Extracurricular • SMK Pasundan 2 Banjaran
-            </span>
-          </div>
+     
 
           {/* Main Headline */}
-          <h1 className="font-display mt-6 text-4xl font-extrabold uppercase tracking-tight text-white sm:text-6xl lg:text-7xl">
-            FORGED IN <span className="text-gradient-orange">GLORY</span>, <br className="hidden sm:block" />
-            PLAYED WITH <span className="text-gradient-gold">PRIDE</span>
+          <h1 className="font-display mt-5 text-4xl font-extrabold uppercase tracking-tight text-white sm:text-6xl lg:text-7xl leading-none">
+            FORGED IN <span className="text-[#ff5500]">GLORY</span>, <br />
+            PLAYED WITH <span className="text-[#ff5500]">PRIDE</span>
           </h1>
-
           {/* Subtitle */}
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
             Membentuk atlet muda yang berdisiplin tinggi, berkarakter tangguh, dan menjunjung tinggi sportivitas demi meraih prestasi terbaik di setiap kejuaraan.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+          {/* CTA Button */}
+          <div className="mt-8 flex flex-wrap items-center justify-start gap-4">
             <a
               href="https://www.instagram.com/pasundan2basketball"
               target="_blank"
@@ -363,7 +334,7 @@ export default function Home() {
               Identitas & Filosofi Tim
             </span>
             <h2 className="font-display mt-2 text-3xl font-extrabold uppercase tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Membangun Fondasi <span className="text-gradient-orange">Juara Sejati</span>
+              Membangun Fondasi Juara Sejati
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-slate-400 text-sm sm:text-base">
               Glorias Basketball bukan sekadar ekstrakurikuler biasa, melainkan wadah pembinaan karakter, ketangguhan fisik, dan kekeluargaan yang solid di SMK Pasundan 2 Banjaran.
@@ -458,7 +429,7 @@ export default function Home() {
               Kurikulum & Program
             </span>
             <h2 className="font-display mt-2 text-3xl font-extrabold uppercase tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Program Pembinaan <span className="text-gradient-orange">Terstruktur</span>
+              Program Pembinaan Terstruktur
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-slate-400 text-sm sm:text-base">
               Setiap sesi dirancang secara sistematis untuk mengembangkan potensi pemain dari tingkat pemula hingga atlet kompetisi.
@@ -579,7 +550,7 @@ export default function Home() {
               Waktu & Lokasi
             </span>
             <h2 className="font-display mt-2 text-3xl font-extrabold uppercase tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Jadwal Latihan <span className="text-gradient-orange">Rutin</span>
+              Jadwal Latihan Rutin
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-slate-400 text-sm sm:text-base">
               Latihan diselenggarakan di Lapangan Utama SMK Pasundan 2 Banjaran dengan bimbingan pelatih profesional.
@@ -651,50 +622,6 @@ export default function Home() {
                 Dokumentasi Asli Tim
               </span>
             </div>
-
-            {/* Category Filter Pills */}
-            <div className="flex flex-wrap items-center gap-2">
-              <button
-                onClick={() => setSelectedGalleryCategory("all")}
-                className={`rounded-lg px-4 py-2 text-xs font-bold uppercase tracking-wider transition cursor-pointer ${
-                  selectedGalleryCategory === "all"
-                    ? "bg-[#ff5500] text-white shadow-[0_0_15px_rgba(255,85,0,0.5)]"
-                    : "border border-white/10 bg-white/5 text-slate-300 hover:bg-white/10"
-                }`}
-              >
-                Semua
-              </button>
-              <button
-                onClick={() => setSelectedGalleryCategory("team")}
-                className={`rounded-lg px-4 py-2 text-xs font-bold uppercase tracking-wider transition cursor-pointer ${
-                  selectedGalleryCategory === "team"
-                    ? "bg-[#ff5500] text-white shadow-[0_0_15px_rgba(255,85,0,0.5)]"
-                    : "border border-white/10 bg-white/5 text-slate-300 hover:bg-white/10"
-                }`}
-              >
-                Tim & Skuad
-              </button>
-              <button
-                onClick={() => setSelectedGalleryCategory("training")}
-                className={`rounded-lg px-4 py-2 text-xs font-bold uppercase tracking-wider transition cursor-pointer ${
-                  selectedGalleryCategory === "training"
-                    ? "bg-[#ff5500] text-white shadow-[0_0_15px_rgba(255,85,0,0.5)]"
-                    : "border border-white/10 bg-white/5 text-slate-300 hover:bg-white/10"
-                }`}
-              >
-                Sesi Latihan
-              </button>
-              <button
-                onClick={() => setSelectedGalleryCategory("match")}
-                className={`rounded-lg px-4 py-2 text-xs font-bold uppercase tracking-wider transition cursor-pointer ${
-                  selectedGalleryCategory === "match"
-                    ? "bg-[#ff5500] text-white shadow-[0_0_15px_rgba(255,85,0,0.5)]"
-                    : "border border-white/10 bg-white/5 text-slate-300 hover:bg-white/10"
-                }`}
-              >
-                Pertandingan
-              </button>
-            </div>
           </div>
 
           {/* Photo Grid */}
@@ -729,34 +656,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🏀 IMAGE LIGHTBOX MODAL */}
-      {activeImageModal && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-md"
-          onClick={() => setActiveImageModal(null)}
-        >
-          <div
-            className="relative max-h-[90vh] max-w-5xl overflow-hidden rounded-2xl border border-white/20 bg-slate-950 p-2 shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setActiveImageModal(null)}
-              className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/60 text-white transition hover:bg-[#ff5500]"
-            >
-              <X className="h-6 w-6" />
-            </button>
-            <div className="relative h-[65vh] w-full min-w-[320px] sm:min-w-[550px] md:min-w-[700px] lg:min-w-[850px]">
-              <Image
-                src={activeImageModal}
-                alt="Glorias Photo Preview"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
-        </div>
-      )}
-
+      
       {/* 🏀 FAQ SECTION */}
       <section id="faq" className="relative py-24 px-4 sm:px-6 lg:px-8 border-t border-white/5 bg-[#090D16]/60">
         <div className="mx-auto max-w-4xl">
@@ -777,7 +677,7 @@ export default function Home() {
               >
                 <button
                   onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
-                  className="flex w-full items-center justify-between p-6 text-left"
+                  className="flex w-full items-center justify-between p-6 text-left cursor-pointer"
                 >
                   <span className="font-semibold text-white text-sm sm:text-base">
                     {faq.q}
@@ -808,7 +708,7 @@ export default function Home() {
                 Home Court & Kontak Resmi
               </span>
               <h2 className="font-display mt-2 text-3xl font-extrabold uppercase tracking-tight text-white sm:text-4xl">
-                Terhubung Bersama <span className="text-gradient-orange">Glorias P2B</span>
+                Terhubung Bersama Glorias P2B
               </h2>
               <p className="mt-4 text-sm text-slate-400 leading-relaxed">
                 Untuk pertanyaan, informasi jadwal sparring/tanding, maupun pendaftaran anggota baru, silakan langsung menghubungi kami melalui Direct Message (DM) Instagram resmi.
