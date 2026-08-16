@@ -137,12 +137,9 @@ export default function Home() {
     },
     {
       q: "Kapan dan di mana jadwal latihan rutin Glorias Basketball?",
-      a: "Latihan rutin diadakan 3-4 kali seminggu (Senin, Rabu, Jumat sore pukul 15:30 WIB dan Sabtu pagi pukul 08:00 WIB) bertempat di Lapangan Basket Utama SMK Pasundan 2 Banjaran.",
+      a: "Latihan rutin diadakan 2-3 kali seminggu (Senin, Kamis dan Sabtu sore pukul 15:30 WIB) bertempat di Lapangan Basket Utama SMK Pasundan 2 Banjaran.",
     },
-    {
-      q: "Kompetisi dan turnamen apa saja yang biasa diikuti oleh Glorias?",
-      a: "Glorias Basketball aktif berkompetisi di turnamen antar-SMA/SMK se-Bandung Raya, Kejurda Pelajar, DBL Series, serta laga persahabatan/sparring berkala dengan sekolah-sekolah unggulan.",
-    },
+
   ];
 
   return (
@@ -310,11 +307,11 @@ export default function Home() {
         {/* Background Image with Dynamic Overlays */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/img/DSCF0436.jpg"
+            src="/img/Hero.jpg"
             alt="Glorias Basketball Team SMK Pasundan 2 Banjaran"
             fill
             priority
-            className="object-cover object-center opacity-30 brightness-75 scale-105 transform transition duration-1000"
+            className="object-cover object-center opacity-80 scale-105 transform transition duration-1000"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#07090E] via-[#07090E]/80 to-[#07090E]/60" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-[#07090E]/50 to-[#07090E]" />
@@ -354,64 +351,6 @@ export default function Home() {
               <span>Hubungi via Instagram</span>
               <ExternalLink className="h-4 w-4" />
             </a>
-            <a
-              href="#galeri"
-              className="inline-flex items-center gap-2 rounded-xl border border-white/20 bg-white/5 px-8 py-4 text-sm font-bold uppercase tracking-wider text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/40"
-            >
-              <span>Jelajahi Galeri</span>
-              <ChevronRight className="h-4 w-4 text-slate-400" />
-            </a>
-          </div>
-
-          {/* Live Stats Row */}
-          <div className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:gap-6">
-            <div className="glass-panel rounded-2xl p-5 text-center">
-              <div className="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-[#ff5500]/15 text-[#ff5500]">
-                <Trophy className="h-5 w-5" />
-              </div>
-              <div className="font-display text-3xl font-extrabold text-white sm:text-4xl">
-                15+
-              </div>
-              <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-slate-400">
-                Trofi & Prestasi
-              </div>
-            </div>
-
-            <div className="glass-panel rounded-2xl p-5 text-center">
-              <div className="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-[#f59e0b]/15 text-[#f59e0b]">
-                <Users className="h-5 w-5" />
-              </div>
-              <div className="font-display text-3xl font-extrabold text-white sm:text-4xl">
-                40+
-              </div>
-              <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-slate-400">
-                Atlet Aktif
-              </div>
-            </div>
-
-            <div className="glass-panel rounded-2xl p-5 text-center">
-              <div className="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-[#ff5500]/15 text-[#ff5500]">
-                <Calendar className="h-5 w-5" />
-              </div>
-              <div className="font-display text-3xl font-extrabold text-white sm:text-4xl">
-                4x
-              </div>
-              <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-slate-400">
-                Sesi Latihan / Minggu
-              </div>
-            </div>
-
-            <div className="glass-panel rounded-2xl p-5 text-center">
-              <div className="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-[#10b981]/15 text-[#10b981]">
-                <Award className="h-5 w-5" />
-              </div>
-              <div className="font-display text-3xl font-extrabold text-white sm:text-4xl">
-                100%
-              </div>
-              <div className="mt-1 text-xs font-semibold uppercase tracking-wider text-slate-400">
-                Team Brotherhood
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -647,7 +586,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {/* Senin */}
             <div className="glass-panel rounded-2xl p-6 border-l-4 border-l-[#ff5500]">
               <div className="flex items-center justify-between">
@@ -678,7 +617,7 @@ export default function Home() {
             <div className="glass-panel rounded-2xl p-6 border-l-4 border-l-[#f59e0b]">
               <div className="flex items-center justify-between">
                 <span className="font-display text-2xl font-bold uppercase text-white">
-                  Rabu
+                  Kamis
                 </span>
                 <span className="rounded-md bg-[#f59e0b]/10 px-2.5 py-1 text-xs font-bold text-[#f59e0b]">
                   Sore
@@ -699,58 +638,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* Jumat */}
-            <div className="glass-panel rounded-2xl p-6 border-l-4 border-l-[#ff5500]">
-              <div className="flex items-center justify-between">
-                <span className="font-display text-2xl font-bold uppercase text-white">
-                  Jumat
-                </span>
-                <span className="rounded-md bg-[#ff5500]/10 px-2.5 py-1 text-xs font-bold text-[#ff5500]">
-                  Sore
-                </span>
-              </div>
-              <div className="mt-4 flex items-center gap-2 text-xs font-semibold text-slate-300">
-                <Clock className="h-4 w-4 text-[#ff5500]" />
-                <span>15:00 - 17:30 WIB</span>
-              </div>
-              <div className="mt-2 flex items-center gap-2 text-xs text-slate-400">
-                <MapPin className="h-4 w-4 text-slate-500" />
-                <span>Lapangan Utama P2B</span>
-              </div>
-              <div className="mt-5 border-t border-white/10 pt-4">
-                <div className="text-xs font-bold uppercase text-white">Fokus Sesi:</div>
-                <div className="mt-1 text-xs text-slate-400">
-                  Shooting Clinic, Free Throws & Physical Conditioning.
-                </div>
-              </div>
-            </div>
-
-            {/* Sabtu */}
-            <div className="glass-panel rounded-2xl p-6 border-l-4 border-l-[#10b981]">
-              <div className="flex items-center justify-between">
-                <span className="font-display text-2xl font-bold uppercase text-white">
-                  Sabtu
-                </span>
-                <span className="rounded-md bg-[#10b981]/10 px-2.5 py-1 text-xs font-bold text-[#10b981]">
-                  Pagi
-                </span>
-              </div>
-              <div className="mt-4 flex items-center gap-2 text-xs font-semibold text-slate-300">
-                <Clock className="h-4 w-4 text-[#10b981]" />
-                <span>08:00 - 11:00 WIB</span>
-              </div>
-              <div className="mt-2 flex items-center gap-2 text-xs text-slate-400">
-                <MapPin className="h-4 w-4 text-slate-500" />
-                <span>Lapangan Utama P2B</span>
-              </div>
-              <div className="mt-5 border-t border-white/10 pt-4">
-                <div className="text-xs font-bold uppercase text-white">Fokus Sesi:</div>
-                <div className="mt-1 text-xs text-slate-400">
-                  Internal Scrimmage / Sparring Match & Game Review.
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -763,16 +650,13 @@ export default function Home() {
               <span className="text-xs font-bold uppercase tracking-widest text-[#ff5500]">
                 Dokumentasi Asli Tim
               </span>
-              <h2 className="font-display mt-2 text-3xl font-extrabold uppercase tracking-tight text-white sm:text-4xl">
-                Galeri Aksi <span className="text-gradient-orange">Glorias P2B</span>
-              </h2>
             </div>
 
             {/* Category Filter Pills */}
             <div className="flex flex-wrap items-center gap-2">
               <button
                 onClick={() => setSelectedGalleryCategory("all")}
-                className={`rounded-lg px-4 py-2 text-xs font-bold uppercase tracking-wider transition ${
+                className={`rounded-lg px-4 py-2 text-xs font-bold uppercase tracking-wider transition cursor-pointer ${
                   selectedGalleryCategory === "all"
                     ? "bg-[#ff5500] text-white shadow-[0_0_15px_rgba(255,85,0,0.5)]"
                     : "border border-white/10 bg-white/5 text-slate-300 hover:bg-white/10"
@@ -782,7 +666,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => setSelectedGalleryCategory("team")}
-                className={`rounded-lg px-4 py-2 text-xs font-bold uppercase tracking-wider transition ${
+                className={`rounded-lg px-4 py-2 text-xs font-bold uppercase tracking-wider transition cursor-pointer ${
                   selectedGalleryCategory === "team"
                     ? "bg-[#ff5500] text-white shadow-[0_0_15px_rgba(255,85,0,0.5)]"
                     : "border border-white/10 bg-white/5 text-slate-300 hover:bg-white/10"
@@ -792,7 +676,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => setSelectedGalleryCategory("training")}
-                className={`rounded-lg px-4 py-2 text-xs font-bold uppercase tracking-wider transition ${
+                className={`rounded-lg px-4 py-2 text-xs font-bold uppercase tracking-wider transition cursor-pointer ${
                   selectedGalleryCategory === "training"
                     ? "bg-[#ff5500] text-white shadow-[0_0_15px_rgba(255,85,0,0.5)]"
                     : "border border-white/10 bg-white/5 text-slate-300 hover:bg-white/10"
@@ -802,7 +686,7 @@ export default function Home() {
               </button>
               <button
                 onClick={() => setSelectedGalleryCategory("match")}
-                className={`rounded-lg px-4 py-2 text-xs font-bold uppercase tracking-wider transition ${
+                className={`rounded-lg px-4 py-2 text-xs font-bold uppercase tracking-wider transition cursor-pointer ${
                   selectedGalleryCategory === "match"
                     ? "bg-[#ff5500] text-white shadow-[0_0_15px_rgba(255,85,0,0.5)]"
                     : "border border-white/10 bg-white/5 text-slate-300 hover:bg-white/10"
