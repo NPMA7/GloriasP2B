@@ -61,7 +61,7 @@ export default function Home() {
       category: "training",
     },
     {
-      src: "/img/10.jpg",
+      src: "/img/19.jpg",
       title: "Ball Handling Mastery",
       desc: "Penguasaan dribble presisi dan kontrol bola kecepatan tinggi.",
       category: "training",
@@ -79,19 +79,19 @@ export default function Home() {
       category: "team",
     },
     {
-      src: "/img/12.jpg",
+      src: "/img/17.jpg",
       title: "Shooting Precision",
       desc: "Latihan tembakan perimeter dan free-throw akurasi tinggi.",
       category: "training",
     },
     {
-      src: "/img/14.jpg",
+      src: "/img/15.jpg",
       title: "Rebound & Court Dominance",
       desc: "Duel udara dan pertahanan paint area yang kokoh.",
       category: "match",
     },
     {
-      src: "/img/DSCF0470.jpg",
+      src: "/img/6.jpg",
       title: "Fitness & Athletic Conditioning",
       desc: "Peningkatan daya tahan kardio dan kekuatan fisik menyeluruh.",
       category: "training",
@@ -441,7 +441,7 @@ export default function Home() {
             <div className="glass-panel rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-[#ff5500]/50 hover:-translate-y-2">
               <div className="relative h-48 w-full">
                 <Image
-                  src="/img/DSCF0503.jpg"
+                  src="/img/18.jpg"
                   alt="Program Reguler & Fundamental"
                   fill
                   className="object-cover"
@@ -475,7 +475,7 @@ export default function Home() {
             <div className="glass-panel rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-[#ff5500]/50 hover:-translate-y-2">
               <div className="relative h-48 w-full">
                 <Image
-                  src="/img/DSCF0492.jpg"
+                  src="/img/9.jpg"
                   alt="Varsity Squad & Taktik"
                   fill
                   className="object-cover"
@@ -509,7 +509,7 @@ export default function Home() {
             <div className="glass-panel rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 hover:border-[#ff5500]/50 hover:-translate-y-2">
               <div className="relative h-48 w-full">
                 <Image
-                  src="/img/DSCF0470.jpg"
+                  src="/img/14.jpg"
                   alt="Strength & Conditioning"
                   fill
                   className="object-cover"
